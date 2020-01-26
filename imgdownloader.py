@@ -19,10 +19,14 @@ if __name__ == '__main__':
     wb = xlrd.open_workbook(filename=file)  # 打开文件
     sheet1 = wb.sheet_by_index(0)  # 通过索引获取表格
     rows = sheet1.nrows - 1# 得到数据的总行数
-    for i in range(rows + 1):
+    for i in range(rows):
         # 下载要的图片
-        imgname = sheet1.cell(i, 1).value
-        img_url = sheet1.cell(i, 4).value
-        print("剩余: {} 张图片".format(i))
+        imgname = sheet1.cell(i + 735, 1).value
+        img_url = sheet1.cell(i + 735, 4).value
+        if(img_url == ""):
+            print(imgname + '他妈的没有链接')
+            continue
+        print(download_img(img_url,imgname))
+        print("剩余: {} 张图片".format(rows-735 - i))
 
 
