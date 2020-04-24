@@ -19,9 +19,9 @@ def download_img(img_url, imgID, imgdir_path):
 
 if __name__ == '__main__':
     ### 参数设置 ###
-    # file = 'E:\\商品图片excel\\商品库存列表(1-8095).xlsx'
+    # xlsx_path = 'E:\\商品图片excel\\商品库存列表(1-8095).xlsx'
     xlsx_path = "xlsx/to8664.xlsx"
-    imgdir_path = "/Users/chen/Desktop/下载测试/"
+    imgdir_path = "/Users/chen/Desktop/商品图片/"
     sheetIndex = 1
 
     ###############
