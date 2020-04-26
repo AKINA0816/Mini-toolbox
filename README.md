@@ -1,0 +1,2 @@
+和imgSearchSIte 联动
+给定秦丝上下载的xlsx 自动同步百度云智能的图片库及vps storage
