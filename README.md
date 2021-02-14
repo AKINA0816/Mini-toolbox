@@ -1,2 +1,2 @@
-和imgSearchSIte 联动
-给定秦丝上下载的xlsx 自动同步百度云智能的图片库及vps storage
+Tool for imgSearchSIte
+Given xlsx downloaded from qinsi, Automatically synchronize Baidu Cloud and Vps storage
